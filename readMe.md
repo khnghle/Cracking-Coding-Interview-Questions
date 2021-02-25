@@ -6,7 +6,7 @@
 
 ## List of Coding Questions
 #### Chapter 1 
-- [] 1.1 - Is Unique
+- [ ] 1.1 - Is Unique
 - [] 1.2 - Check Permutation
 - [] 1.3 - URLify
 - [] 1.4 - Palindrome Permutation
