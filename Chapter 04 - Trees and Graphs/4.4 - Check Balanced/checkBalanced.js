@@ -32,10 +32,7 @@ function checkSubTree(root) {
   // if NOT balanced 
   if (Math.abs(hLeft-hRight)>1) return -Infinity
   // if balanced
-  else {
-    const max = Math.max(hLeft, hRight) + 1
-    return max
-  }
+  else return Math.max(hLeft, hRight) + 1
 }
 
 function checkBalanced(root){
