@@ -33,15 +33,14 @@ class BST {
     }
   }
 
-  addArray(array){
-    array.forEach(currVal => this.addVal(currVal))
+  addArray(array) {
+    array.forEach((currVal) => this.addVal(currVal));
     return this;
   }
 
   getTree() {
     return this.root;
   }
-
 }
 
-module.exports = BST
+module.exports = BST;
