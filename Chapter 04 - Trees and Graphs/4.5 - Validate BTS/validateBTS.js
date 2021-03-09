@@ -5,7 +5,7 @@ function validateBTS(root) {
   //Base case
   if (!root) return true;
 
-  if (root.left && root.left.value > root.value) return false;
+  if (root.left && root.left.value >= root.value) return false;
   if (root.right && root.right.value < root.value) return false;
 
   //Recursive case
@@ -27,4 +27,4 @@ newBT.addArray(testCase2);
 const result1 = validateBTS(newBST.getTree()); //true
 const result2 = validateBTS(newBT.getTree());
 
-console.log(result1);
+console.log(result2);
