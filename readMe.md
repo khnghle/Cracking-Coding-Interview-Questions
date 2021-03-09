@@ -35,10 +35,10 @@
 - [ ] 3.6 - Animal Shelter
 
 #### Chapter 4
-- [ ] 4.1 - Route Between Nodes
-- [ ] 4.2 - Minimal Tree
-- [ ] 4.3 - List of Depths
-- [ ] 4.4 - Check Balanced
+- [x] 4.1 - Route Between Nodes
+- [x] 4.2 - Minimal Tree
+- [x] 4.3 - List of Depths
+- [x] 4.4 - Check Balanced
 - [ ] 4.5 - Validate BST
 - [ ] 4.6 - Successor
 - [ ] 4.7 - Build Order

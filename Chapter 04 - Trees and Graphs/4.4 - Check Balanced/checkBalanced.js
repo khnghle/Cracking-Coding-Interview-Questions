@@ -22,6 +22,7 @@ null null
     null null
 */
 
+//Counting up from leaf nodes 
 function checkSubTree(root) {
   if(!root) return 0; 
   const hLeft = checkSubTree(root.left)
