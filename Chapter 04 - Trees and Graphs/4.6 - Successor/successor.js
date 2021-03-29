@@ -11,10 +11,12 @@ function successor(targetNode, root) {
         currNode = currNode.right;
         while (currNode.left) currNode = currNode.left;
         return currNode;
-      } else if (stack.length) {
-        return stack.pop();
-      } else break;
-    } else if (currNode.value > targetNode.value) {
+      }
+      if (stack.length) return stack.pop();
+      break;
+    } 
+    
+    if (currNode.value > targetNode.value) {
       stack.push(currNode);
       if (currNode.left) currNode = currNode.left;
       else break; // if val does not exist
@@ -32,6 +34,6 @@ const newBST = new BST();
 const testCase = [3, 1, 7, 0, 2, 5, 10, 4, 6, 8, 9];
 newBST.addArray(testCase);
 
-const givenNode = newBST.findVal(-1);
+const givenNode = newBST.findVal(0);
 
 console.log(successor(givenNode, newBST.getTree()));

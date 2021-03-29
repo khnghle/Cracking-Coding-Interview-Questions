@@ -33,6 +33,17 @@ class BST {
     }
   }
 
+  findVal (val, currNode = this.root) {
+    //in order traversal, given a value, return the corresponding node
+    if(currNode && currNode.value === val){
+      return currNode
+    } else {
+      if(currNode && currNode.value > val ) return this.findVal(val, currNode.left)
+      if(currNode && currNode.value <= val) return this.findVal(val, currNode.right)
+      return {}
+    }
+  }
+
   addArray(array) {
     array.forEach((currVal) => this.addVal(currVal));
     return this;
