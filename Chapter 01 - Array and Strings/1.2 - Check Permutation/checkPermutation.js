@@ -4,8 +4,7 @@ function checkPermutations (stringOne, stringTwo){
   stringOne = stringOne.split("").sort().join('')
   stringTwo = stringTwo.split("").sort().join('')
 
-  if(stringOne === stringTwo) return true 
-  return false 
+  return stringOne === stringTwo
 }
 
 const test1 = checkPermutations('tree', 'reet')
