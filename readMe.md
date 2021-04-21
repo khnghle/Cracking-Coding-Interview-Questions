@@ -23,7 +23,7 @@
 #### Chapter 2
 
 - [x] 2.1 - Remove Dups
-- [ ] 2.2 - Return Kth to Last
+- [x] 2.2 - Return Kth to Last
 - [ ] 2.3 - Delete Middle Node
 - [ ] 2.4 - Partition
 - [ ] 2.5 - Sum Lists
