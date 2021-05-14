@@ -9,7 +9,7 @@ such that the 1's place is at the head of the list. Write a function that adds
   output: (2 - 1 - 9)
 */
 
-const LinkedList = require("../utils/SinglyLL");
+const LinkedList = require("./utils/SinglyLL");
 
 function findSum (num1 = 0, num2 = 0, remainder = 0){
   let sum = num1 + num2 + remainder;

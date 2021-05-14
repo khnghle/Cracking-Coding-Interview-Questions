@@ -14,7 +14,7 @@ Solution 2) Start by looking at a node, iterate through the rest of the LL, if d
 
 */
 
-const LinkedList = require("../utils/SinglyLL");
+const LinkedList = require("./utils/SinglyLL");
 
 const removeDups = (linkedList) => {
 

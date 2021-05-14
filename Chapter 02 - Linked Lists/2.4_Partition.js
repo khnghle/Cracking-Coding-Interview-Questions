@@ -1,4 +1,4 @@
-const LinkedList = require("../utils/SinglyLL");
+const LinkedList = require("./utils/SinglyLL");
 
 // T pointer to traverse the LL
 // S pointer to keep track of the node we want to swap our T pointer with

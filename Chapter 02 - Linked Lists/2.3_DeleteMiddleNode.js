@@ -1,4 +1,4 @@
-const LinkedList = require("../utils/SinglyLL");
+const LinkedList = require("./utils/SinglyLL");
 
 function deleteMiddleNode(deletedNode) {
   if (!deletedNode.next) return false;

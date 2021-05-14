@@ -1,4 +1,4 @@
-const LinkedList = require("../utils/SinglyLL");
+const LinkedList = require("./utils/SinglyLL");
 
 /*
   Appoach have 2 pointers

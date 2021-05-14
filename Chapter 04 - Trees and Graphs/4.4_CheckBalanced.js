@@ -22,23 +22,23 @@ null null
     null null
 */
 
-//Counting up from leaf nodes 
+//Counting up from leaf nodes
 function checkSubTree(root) {
-  if(!root) return 0; 
-  const hLeft = checkSubTree(root.left)
-  const hRight = checkSubTree(root.right)
+  if (!root) return 0;
+  const hLeft = checkSubTree(root.left);
+  const hRight = checkSubTree(root.right);
   // once we know its unbalanced keep passing -Infinity up
-  if (hRight === -Infinity || hLeft === -Infinity) return -Infinity
+  if (hRight === -Infinity || hLeft === -Infinity) return -Infinity;
 
-  // if NOT balanced 
-  if (Math.abs(hLeft-hRight)>1) return -Infinity
+  // if NOT balanced
+  if (Math.abs(hLeft - hRight) > 1) return -Infinity;
   // if balanced
-  else return Math.max(hLeft, hRight) + 1
+  else return Math.max(hLeft, hRight) + 1;
 }
 
-function checkBalanced(root){
+function checkBalanced(root) {
   // if -Infinity return false
-  return checkSubTree(root) !== -Infinity
+  return checkSubTree(root) !== -Infinity;
 }
 
 const testCase1 = [1, 2, 3]; //fail
@@ -53,5 +53,5 @@ testBST1.addArray(testCase1);
 testBST2.addArray(testCase2);
 testBST3.addArray(testCase3);
 
-const result1 = checkBalanced(testBST2.getTree())
+const result1 = checkBalanced(testBST2.getTree());
 console.log(JSON.stringify(result1));

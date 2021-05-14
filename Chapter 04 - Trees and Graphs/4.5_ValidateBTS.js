@@ -1,5 +1,5 @@
-const BST = require("../utils/BST");
-const BT = require("../utils/BT");
+const BST = require("./utils/BST");
+const BT = require("./utils/BT");
 
 function validateBTS(root) {
   //Base case

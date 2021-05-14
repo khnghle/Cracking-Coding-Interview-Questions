@@ -1,4 +1,4 @@
-const BST = require("../utils/BST");
+const BST = require("./utils/BST");
 
 function successor(targetNode, root) {
   const stack = [];
