@@ -26,7 +26,7 @@
 - [x] 2.2 - Return Kth to Last
 - [x] 2.3 - Delete Middle Node
 - [x] 2.4 - Partition
-- [ ] 2.5 - Sum Lists
+- [x] 2.5 - Sum Lists
 - [ ] 2.6 - Palindrome
 - [ ] 2.7 - Intersection
 - [ ] 2.8 - Loop Detection
