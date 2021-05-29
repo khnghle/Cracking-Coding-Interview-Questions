@@ -6,11 +6,11 @@ class Node {
 }
 
 class SinglyLinkedList {
-  constructor () {
-    this.head = this.tail = null
+  constructor() {
+    this.head = this.tail = null;
   }
 
-  addVal(val){
+  addVal(val) {
     const currNode = new Node(val);
     if (!this.head) this.head = this.tail = currNode;
     else {
@@ -21,24 +21,35 @@ class SinglyLinkedList {
     return this;
   }
 
-  addArray(array){
-    array.forEach(currVal => this.addVal(currVal))
+  addNode(node) {
+    let currNode = node;
+    this.tail.next = node;
+
+    while (currNode.next) {
+      currNode = currNode.next;
+    }
+
+    this.tail = currNode;
     return this;
   }
 
-  traverseTree () {
+  addArray(array) {
+    array.forEach((currVal) => this.addVal(currVal));
+    return this;
+  }
+
+  traverseTree() {
     let currNode = this.head;
 
-    while(currNode){ 
-      console.log(currNode.value)
-      currNode = currNode.next
+    while (currNode) {
+      console.log(currNode.value);
+      currNode = currNode.next;
     }
   }
 
-  getHead(){
-    return this.head
+  getHead() {
+    return this.head;
   }
-
 }
 
 module.exports = SinglyLinkedList;
