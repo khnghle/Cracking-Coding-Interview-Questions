@@ -23,7 +23,9 @@ class SinglyLinkedList {
 
   addNode(node) {
     let currNode = node;
-    this.tail.next = node;
+
+    if(this.tail) this.tail.next = node;
+    else this.head = this.tail = node 
 
     while (currNode.next) {
       currNode = currNode.next;
